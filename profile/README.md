@@ -35,7 +35,7 @@ We organize as a network of **Cells**—small, autonomous teams pursuing specifi
 
 ## Contributing
 
-We welcome contributors! Check out our [Contributing Guidelines](../CONTRIBUTING.md) to get started. Whether you're a developer, researcher, writer, or curious explorer—there's a place for you here.
+We welcome contributors! Check out our [Contributing Guidelines](https://github.com/superbenefit/.github/blob/619eb442f840096c53cdf2d00ebf22ac37b8fc02/CONTRIBUTING.md) to get started. Whether you're a developer, researcher, writer, or curious explorer—there's a place for you here.
 
 All our work is open source. We build in public because systems transformation requires collective intelligence.
 
