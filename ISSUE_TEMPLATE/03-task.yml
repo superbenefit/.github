@@ -1,0 +1,86 @@
+name: 📋 Task
+description: Create an implementation task (for maintainers/contributors)
+title: "[Task]: "
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for well-defined implementation work.
+        For exploratory work, use Feature Request first.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Task Description
+      description: What needs to be done?
+      placeholder: |
+        Implement X to enable Y.
+
+        This involves:
+        - Change A
+        - Change B
+        - Update tests
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: How do we know this is done?
+      placeholder: |
+        - [ ] Criterion 1
+        - [ ] Criterion 2
+        - [ ] Tests pass
+        - [ ] Documentation updated
+    validations:
+      required: true
+
+  - type: textarea
+    id: related
+    attributes:
+      label: Related Issues/Specs
+      description: Link any related issues, specs, or documentation
+      placeholder: |
+        - Spec: #123
+        - Depends on: #456
+        - Blocks: #789
+    validations:
+      required: false
+
+  - type: dropdown
+    id: complexity
+    attributes:
+      label: Complexity
+      options:
+        - S - Less than 2 hours
+        - M - Half day to full day
+        - L - Multiple days
+        - XL - Week or more (consider breaking down)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: ai-suitable
+    attributes:
+      label: AI Suitability
+      description: Is this task suitable for AI agent implementation?
+      options:
+        - "Yes - Well-scoped, clear criteria"
+        - "Partial - Needs human review/guidance"
+        - "No - Requires human judgment/context"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: ready-check
+    attributes:
+      label: Ready for Work
+      options:
+        - label: Acceptance criteria are clear and testable
+          required: true
+        - label: Dependencies are identified
+          required: false
+        - label: Spec exists (if needed for this scope)
+          required: false

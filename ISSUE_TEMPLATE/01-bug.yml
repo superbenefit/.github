@@ -1,0 +1,83 @@
+name: 🐛 Bug Report
+description: Report a bug or unexpected behavior
+title: "[Bug]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! Please fill out the sections below.
+
+  - type: checkboxes
+    id: existing-check
+    attributes:
+      label: Existing Issue Check
+      options:
+        - label: I searched existing issues and this is not a duplicate
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: What happened? What did you expect to happen?
+      placeholder: |
+        When I did X, Y happened.
+        I expected Z to happen instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce this bug?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Relevant version info, OS, browser, etc.
+      placeholder: |
+        - OS: macOS 14.0
+        - Node: 20.10.0
+        - Browser: Chrome 120
+      render: markdown
+    validations:
+      required: false
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error Logs
+      description: Paste any relevant error messages or logs
+      render: shell
+    validations:
+      required: false
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this bug?
+      options:
+        - Low - Minor inconvenience
+        - Medium - Affects workflow but has workaround
+        - High - Blocks important functionality
+        - Critical - System unusable / data loss
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: reproduce-check
+    attributes:
+      label: Reproducibility
+      options:
+        - label: I can reproduce this bug consistently
+          required: false
