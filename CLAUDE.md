@@ -50,3 +50,13 @@ Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`. Use imperati
 - Follow the 6-phase workflow when using project-mgmt tooling
 - Check `.project/` for existing context before starting work
 - Don't modify files outside issue scope without discussion
+
+## Agent skills
+
+### Issue tracker
+
+GitHub Issues in this repo (via the `gh` CLI). See `docs/agents/issue-tracker.md`.
+
+### Domain docs
+
+single-context: `CONTEXT.md` + `docs/adr/` at the repo root. See `docs/agents/domain.md`.
